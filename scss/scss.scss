@@ -206,57 +206,6 @@ ul{
 .box-exp{
     display: flex;
     width: auto;
-
-    &__box-puce{
-        display: flex;
-        flex-direction: column;
-        line-height: 0px;
-    }
-}
-
-.box-exp-ul{
-  
-    &__1{
-        margin-top: 45px;
-    }
-
-    &__2{
-        margin-top: 145px;
-    }
-
-    &__3{
-        margin-top: 145px;
-    }
-}
-
-.box-exp-txt{
-    margin-left: 60px;
-    text-align: justify;
-    width: 400px;
-}
-
-.box-T-recom{
-    width: auto;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    border-bottom: 1px solid $color-s;
-    margin-top: 20px;
-
-    &__pinceau{
-        width: 30px;
-        height: 30px;
-        margin-top: 15px;
-        color: $color-s;
-        margin-right: 20px;
-    }
-
-}
-
-.box-recom{
-    display: flex;
-    justify-content: space-between;
-    width: 500px;
 }
 
 .box-exp-list{
@@ -307,27 +256,35 @@ ul{
     }
 }
 
+.box-exp-txt{
+    margin-left: 60px;
+    text-align: justify;
+    width: 400px;
+}
 
+.box-T-recom{
+    width: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    border-bottom: 1px solid $color-s;
+    margin-top: 20px;
 
+    &__pinceau{
+        width: 30px;
+        height: 30px;
+        margin-top: 15px;
+        color: $color-s;
+        margin-right: 20px;
+    }
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.box-recom{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
 
 
 
