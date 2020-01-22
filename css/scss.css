@@ -127,6 +127,8 @@ ul {
 .box-form-list__date-1 {
   display: flex;
   padding-bottom: 80px;
+  padding-top: 10px;
+  margin-bottom: -20px;
 }
 .box-form-list__date-1__puce--1 {
   width: 13px;
@@ -182,6 +184,7 @@ ul {
 .box-exp-list__date-1 {
   display: flex;
   padding-bottom: 80px;
+  padding-top: 17px;
 }
 .box-exp-list__date-1__puce--1 {
   width: 13px;
