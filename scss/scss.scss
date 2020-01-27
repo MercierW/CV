@@ -16,8 +16,16 @@ $color-s: #4CAF50;
 $font-1: sans-serif;
 
 
+
+
+
+
+#Nom{
+    font-family: 'aileronthin';
+}
+
 .page{
-	display: flex;
+    display: flex;
 	height: auto;
     width: auto;
     font-family: $font-1;
@@ -36,14 +44,11 @@ ul{
 .section-1{
     background-color: $color-p;
 	width: 400px;
-	display: flex;
-	flex-direction: column;
 }
 
 .box-photo{
 
-    display: flex;
-    justify-content: center;
+    margin-left: 30%;
 
     &__img{
         border: 2px solid orange;
@@ -52,6 +57,11 @@ ul{
         height: 150px;
         margin-top: 20px;
       }
+}
+
+
+.coordonees{
+    line-height: 30px;
 }
 
 .section-1 h2{
@@ -75,10 +85,8 @@ ul{
 .logo{
     &__x{
         
-        width: 60px;
+        width: 60px; 
         height: 60px;
-        width:60px; 
-        height:60px;
         border: 2px solid black;
         border-radius: 30px;
         padding: 10px 10px 10px 10px;  
@@ -97,8 +105,8 @@ ul{
 
 .box-TP{
     font-size: 3em;
-    font-family: 'aileronthin';
     line-height: 30px;
+    margin-bottom: 80px;
 
     &__color{
 
@@ -119,13 +127,13 @@ ul{
     margin-top: -40px;
 }
 
-.box-T-form{
+.box-T{
     width: auto;
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
     border-bottom: 1px solid $color-s;
-    margin-top: 70px;
+    margin-top: 20px;
 
     &__chapeau{
         width: 35px;
@@ -135,106 +143,56 @@ ul{
         margin-right: 20px;
         
     }
+
+    &__caisse{
+        width: 30px;
+        height: 30px;
+        margin-top: 15px;
+        color: $color-s;
+        margin-right: 20px;
+        
+    }
+
+    &__pinceau{
+        width: 30px;
+        height: 30px;
+        margin-top: 15px;
+        color: $color-s;
+        margin-right: 20px;
+    }
 }
 
-.box-form{
+.box{
     display: flex;
     width: auto;
 }
 
-.box-form-list{
+.box-2{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     
-    &__date-1{
+    &__date-2{
         display: flex;
         padding-bottom: 80px;
         padding-top: 10px;
         margin-bottom: -20px;
 
-        &__puce--1{
+        &__puce{
             width: 13px;
             height: 13px;
             color: $color-s;
             padding-top: 17px;
             margin-right: -25px;
         }
-
-
+    
     }
 
-    &__date-2{
+    &__date{
         display: flex;
         padding-bottom: 80px;
 
-        &__puce--2{
-            width: 13px;
-            height: 13px;
-            color: $color-s;
-            padding-top: 17px;
-            margin-right: -25px;
-        }
-
-    }
-}
-
-
-.box-form-txt{
-    margin-left: 155px;
-    text-align: justify;
-    width: 400px;
-}
-
-.box-T-exp{
-        width: auto;
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: flex-end;
-        border-bottom: 1px solid $color-s;
-        margin-top: 20px;
-    
-        &__caisse{
-            width: 30px;
-            height: 30px;
-            margin-top: 15px;
-            color: $color-s;
-            margin-right: 20px;
-            
-        }
-    
-}
-
-.box-exp{
-    display: flex;
-    width: auto;
-}
-
-.box-exp-list{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    
-    &__date-1{
-        display: flex;
-        padding-bottom: 80px;
-        padding-top: 17px;
-
-        &__puce--1{
-            width: 13px;
-            height: 13px;
-            color: $color-s;
-            padding-top: 17px;
-            margin-right: -25px;
-        }
-
-    }
-
-    &__date-2{
-        display: flex;
-        padding-bottom: 80px;
-
-        &__puce--2{
+        &__puce{
             width: 13px;
             height: 13px;
             color: $color-s;
@@ -247,40 +205,30 @@ ul{
     &__date-3{
         display: flex;
         padding-bottom: 80px;
-
-        &__puce--3{
+        padding-top: 17px;
+    
+        &__puce{
             width: 13px;
             height: 13px;
             color: $color-s;
             padding-top: 17px;
             margin-right: -25px;
+            }
+    
         }
+}
 
-    }
+
+.box-form-txt{
+    margin-left: 155px;
+    text-align: justify;
+    width: 400px;
 }
 
 .box-exp-txt{
     margin-left: 60px;
     text-align: justify;
     width: 400px;
-}
-
-.box-T-recom{
-    width: auto;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    border-bottom: 1px solid $color-s;
-    margin-top: 20px;
-
-    &__pinceau{
-        width: 30px;
-        height: 30px;
-        margin-top: 15px;
-        color: $color-s;
-        margin-right: 20px;
-    }
-
 }
 
 .box-recom{
@@ -291,22 +239,23 @@ ul{
 
 
 
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1150px){
     .page{
-		width: 980px;
+        width: 1150px;
+        width: auto;
 		display: flex;
 		flex-direction: column;
-		height: auto;
+        height: auto;
 	}
 
 	.section-1{
 		font-size: 15px;
-		display: flex;
 		align-self: center;
 		background-color: $color-p;
 		padding-left: 290px;
 		padding-right: 290px;
-		border-bottom: 1.5px solid black;
+        border-bottom: 1.5px solid black;
+        width: auto;
 
 	}
 
@@ -318,9 +267,5 @@ ul{
 
 	}
 
-	.description{
-		margin-bottom: 0px;
-	}
-
-
 }
+

@@ -5,6 +5,10 @@
   font-weight: normal;
   font-style: normal;
 }
+#Nom {
+  font-family: "aileronthin";
+}
+
 .page {
   display: flex;
   height: auto;
@@ -25,13 +29,10 @@ ul {
 .section-1 {
   background-color: #feca06;
   width: 400px;
-  display: flex;
-  flex-direction: column;
 }
 
 .box-photo {
-  display: flex;
-  justify-content: center;
+  margin-left: 30%;
 }
 .box-photo__img {
   border: 2px solid orange;
@@ -39,6 +40,10 @@ ul {
   width: 150px;
   height: 150px;
   margin-top: 20px;
+}
+
+.coordonees {
+  line-height: 30px;
 }
 
 .section-1 h2 {
@@ -62,8 +67,6 @@ ul {
 .logo__x {
   width: 60px;
   height: 60px;
-  width: 60px;
-  height: 60px;
   border: 2px solid black;
   border-radius: 30px;
   padding: 10px 10px 10px 10px;
@@ -80,8 +83,8 @@ ul {
 
 .box-TP {
   font-size: 3em;
-  font-family: "aileronthin";
   line-height: 30px;
+  margin-bottom: 80px;
 }
 .box-TP__color {
   color: #feca06;
@@ -98,50 +101,76 @@ ul {
   margin-top: -40px;
 }
 
-.box-T-form {
+.box-T {
   width: auto;
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
   border-bottom: 1px solid #4CAF50;
-  margin-top: 70px;
+  margin-top: 20px;
 }
-.box-T-form__chapeau {
+.box-T__chapeau {
   width: 35px;
   height: 35px;
   margin-top: 15px;
   color: #4CAF50;
   margin-right: 20px;
 }
+.box-T__caisse {
+  width: 30px;
+  height: 30px;
+  margin-top: 15px;
+  color: #4CAF50;
+  margin-right: 20px;
+}
+.box-T__pinceau {
+  width: 30px;
+  height: 30px;
+  margin-top: 15px;
+  color: #4CAF50;
+  margin-right: 20px;
+}
 
-.box-form {
+.box {
   display: flex;
   width: auto;
 }
 
-.box-form-list {
+.box-2 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-.box-form-list__date-1 {
+.box-2__date-2 {
   display: flex;
   padding-bottom: 80px;
   padding-top: 10px;
   margin-bottom: -20px;
 }
-.box-form-list__date-1__puce--1 {
+.box-2__date-2__puce {
   width: 13px;
   height: 13px;
   color: #4CAF50;
   padding-top: 17px;
   margin-right: -25px;
 }
-.box-form-list__date-2 {
+.box-2__date {
   display: flex;
   padding-bottom: 80px;
 }
-.box-form-list__date-2__puce--2 {
+.box-2__date__puce {
+  width: 13px;
+  height: 13px;
+  color: #4CAF50;
+  padding-top: 17px;
+  margin-right: -25px;
+}
+.box-2__date-3 {
+  display: flex;
+  padding-bottom: 80px;
+  padding-top: 17px;
+}
+.box-2__date-3__puce {
   width: 13px;
   height: 13px;
   color: #4CAF50;
@@ -155,87 +184,10 @@ ul {
   width: 400px;
 }
 
-.box-T-exp {
-  width: auto;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
-  border-bottom: 1px solid #4CAF50;
-  margin-top: 20px;
-}
-.box-T-exp__caisse {
-  width: 30px;
-  height: 30px;
-  margin-top: 15px;
-  color: #4CAF50;
-  margin-right: 20px;
-}
-
-.box-exp {
-  display: flex;
-  width: auto;
-}
-
-.box-exp-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.box-exp-list__date-1 {
-  display: flex;
-  padding-bottom: 80px;
-  padding-top: 17px;
-}
-.box-exp-list__date-1__puce--1 {
-  width: 13px;
-  height: 13px;
-  color: #4CAF50;
-  padding-top: 17px;
-  margin-right: -25px;
-}
-.box-exp-list__date-2 {
-  display: flex;
-  padding-bottom: 80px;
-}
-.box-exp-list__date-2__puce--2 {
-  width: 13px;
-  height: 13px;
-  color: #4CAF50;
-  padding-top: 17px;
-  margin-right: -25px;
-}
-.box-exp-list__date-3 {
-  display: flex;
-  padding-bottom: 80px;
-}
-.box-exp-list__date-3__puce--3 {
-  width: 13px;
-  height: 13px;
-  color: #4CAF50;
-  padding-top: 17px;
-  margin-right: -25px;
-}
-
 .box-exp-txt {
   margin-left: 60px;
   text-align: justify;
   width: 400px;
-}
-
-.box-T-recom {
-  width: auto;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
-  border-bottom: 1px solid #4CAF50;
-  margin-top: 20px;
-}
-.box-T-recom__pinceau {
-  width: 30px;
-  height: 30px;
-  margin-top: 15px;
-  color: #4CAF50;
-  margin-right: 20px;
 }
 
 .box-recom {
@@ -244,9 +196,10 @@ ul {
   width: 500px;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1150px) {
   .page {
-    width: 980px;
+    width: 1150px;
+    width: auto;
     display: flex;
     flex-direction: column;
     height: auto;
@@ -254,22 +207,18 @@ ul {
 
   .section-1 {
     font-size: 15px;
-    display: flex;
     align-self: center;
     background-color: #feca06;
     padding-left: 290px;
     padding-right: 290px;
     border-bottom: 1.5px solid black;
+    width: auto;
   }
 
   .section-2 {
     font-size: 15px;
     width: auto;
     align-self: center;
-  }
-
-  .description {
-    margin-bottom: 0px;
   }
 }
 
