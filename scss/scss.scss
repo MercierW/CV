@@ -20,12 +20,9 @@ $font-1: sans-serif;
 
 
 
-.box-TP h1{
-    font-family: 'aileronthin';
-}
 
 .page{
-	height: auto;
+    height: auto;
     width: auto;
     font-family: $font-1;
 }
@@ -40,28 +37,12 @@ ul{
     color: $color-s;
 }
 
+
+
 .section-1{
     background-color: $color-p;
     width: 400px;
     float: left;
-}
-
-.box-photo{
-
-    margin-left: 32%;
-
-    &__img{
-        border: 2px solid orange;
-        border-radius: 81px;
-        width: 150px;
-        height: 150px;
-        margin-top: 20px;
-      }
-}
-
-
-.coordonees{
-    line-height: 30px;
 }
 
 .section-1 h2{
@@ -72,11 +53,30 @@ ul{
     padding: 5px 0 5px 0;
 }
 
+.box-photo{
+    
+    margin-left: 32%;
+    
+    &__img{
+        border: 2px solid orange;
+        border-radius: 81px;
+        width: 150px;
+        height: 150px;
+        margin-top: 20px;
+    }
+}
+
 .coordonees, .description, .logo{
     padding-left: 15%;
     padding-right: 15%;
     text-align: justify;
 }
+
+.coordonees{
+    line-height: 30px;
+}
+
+
 
 .description{
     margin-bottom: 230px;
@@ -109,18 +109,22 @@ ul{
     font-size: 3em;
     line-height: 30px;
     margin-bottom: 80px;
-
+    
     &__color{
-
+        
         color: $color-p;
         font-family: $font-1;
     }
-
+    
     &__tiret{
-
+        
         text-decoration: underline;
         text-decoration-color: $color-p;
     }
+}
+
+.box-TP h1{
+    font-family: 'aileronthin';
 }
 
 .box-TP h2{
@@ -244,10 +248,10 @@ ul{
 @media screen and (max-width: 1150px){
     .page{
         width: 1150px;
-        width: auto;
 		display: flex;
 		flex-direction: column;
         height: auto;
+        padding: 0 5% 0 5%;
 	}
 
 	.section-1{
@@ -269,6 +273,14 @@ ul{
 
     }
     
+    .box-photo{
+        padding-left: 3%; 
+    }
+
+    .coordonees{
+        padding-left: 35%;
+    }
+    
     .description{
         margin-top: 10%;
         padding-right: 2%;
@@ -277,12 +289,19 @@ ul{
     }
 
     .logo{
-        margin-bottom: 10%;
+        margin-bottom: 2%;
+        padding-left: 31%;
+        width: 100%;
+        
+        &__x{
+        
+            width: 40px; 
+            height: 40px;
+            border: 2px solid black;
+            border-radius: 30px;
+        }
     }
 
-    .box-photo{
-        padding-left: 0%;
-    }
 
 }
 

@@ -5,10 +5,6 @@
   font-weight: normal;
   font-style: normal;
 }
-.box-TP h1 {
-  font-family: "aileronthin";
-}
-
 .page {
   height: auto;
   width: auto;
@@ -31,6 +27,14 @@ ul {
   float: left;
 }
 
+.section-1 h2 {
+  background-color: #404040;
+  text-align: center;
+  text-transform: uppercase;
+  color: #feca06;
+  padding: 5px 0 5px 0;
+}
+
 .box-photo {
   margin-left: 32%;
 }
@@ -42,22 +46,14 @@ ul {
   margin-top: 20px;
 }
 
-.coordonees {
-  line-height: 30px;
-}
-
-.section-1 h2 {
-  background-color: #404040;
-  text-align: center;
-  text-transform: uppercase;
-  color: #feca06;
-  padding: 5px 0 5px 0;
-}
-
 .coordonees, .description, .logo {
   padding-left: 15%;
   padding-right: 15%;
   text-align: justify;
+}
+
+.coordonees {
+  line-height: 30px;
 }
 
 .description {
@@ -97,6 +93,10 @@ ul {
 .box-TP__tiret {
   text-decoration: underline;
   text-decoration-color: #feca06;
+}
+
+.box-TP h1 {
+  font-family: "aileronthin";
 }
 
 .box-TP h2 {
@@ -203,10 +203,10 @@ ul {
 @media screen and (max-width: 1150px) {
   .page {
     width: 1150px;
-    width: auto;
     display: flex;
     flex-direction: column;
     height: auto;
+    padding: 0 5% 0 5%;
   }
 
   .section-1 {
@@ -225,6 +225,14 @@ ul {
     align-self: center;
   }
 
+  .box-photo {
+    padding-left: 3%;
+  }
+
+  .coordonees {
+    padding-left: 35%;
+  }
+
   .description {
     margin-top: 10%;
     padding-right: 2%;
@@ -233,11 +241,15 @@ ul {
   }
 
   .logo {
-    margin-bottom: 10%;
+    margin-bottom: 2%;
+    padding-left: 31%;
+    width: 100%;
   }
-
-  .box-photo {
-    padding-left: 0%;
+  .logo__x {
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 30px;
   }
 }
 
