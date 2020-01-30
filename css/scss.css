@@ -10,7 +10,6 @@
 }
 
 .page {
-  display: flex;
   height: auto;
   width: auto;
   font-family: sans-serif;
@@ -29,10 +28,11 @@ ul {
 .section-1 {
   background-color: #feca06;
   width: 400px;
+  float: left;
 }
 
 .box-photo {
-  margin-left: 30%;
+  margin-left: 32%;
 }
 .box-photo__img {
   border: 2px solid orange;
@@ -64,6 +64,9 @@ ul {
   margin-bottom: 230px;
 }
 
+.logo {
+  margin-bottom: 60%;
+}
 .logo__x {
   width: 60px;
   height: 60px;
@@ -73,8 +76,9 @@ ul {
 }
 
 .section-2 {
-  width: auto;
+  width: 50%;
   margin-left: 70px;
+  display: inline-block;
 }
 
 .section-2 h3 {
@@ -219,6 +223,21 @@ ul {
     font-size: 15px;
     width: auto;
     align-self: center;
+  }
+
+  .description {
+    margin-top: 10%;
+    padding-right: 2%;
+    padding-left: 2%;
+    margin-bottom: 150px;
+  }
+
+  .logo {
+    margin-bottom: 10%;
+  }
+
+  .box-photo {
+    padding-left: 0%;
   }
 }
 

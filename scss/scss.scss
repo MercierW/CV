@@ -25,7 +25,6 @@ $font-1: sans-serif;
 }
 
 .page{
-    display: flex;
 	height: auto;
     width: auto;
     font-family: $font-1;
@@ -43,12 +42,13 @@ ul{
 
 .section-1{
     background-color: $color-p;
-	width: 400px;
+    width: 400px;
+    float: left;
 }
 
 .box-photo{
 
-    margin-left: 30%;
+    margin-left: 32%;
 
     &__img{
         border: 2px solid orange;
@@ -83,6 +83,7 @@ ul{
 }
 
 .logo{
+    margin-bottom: 60%;
     &__x{
         
         width: 60px; 
@@ -95,8 +96,9 @@ ul{
 }
 
 .section-2{
-    width: auto;
+    width: 50%;
     margin-left: 70px;
+    display: inline-block;
 }
 
 .section-2 h3{
@@ -262,10 +264,25 @@ ul{
 	.section-2{
 		font-size: 15px;
 		width: auto;
-		align-self: center;
-		
+        align-self: center;
+        
 
-	}
+    }
+    
+    .description{
+        margin-top: 10%;
+        padding-right: 2%;
+        padding-left: 2%;
+        margin-bottom: 150px;
+    }
+
+    .logo{
+        margin-bottom: 10%;
+    }
+
+    .box-photo{
+        padding-left: 0%;
+    }
 
 }
 
