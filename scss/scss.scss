@@ -42,7 +42,7 @@ ul{
 }
 
 
-
+// SECTION 1 //-------------------------->
 .section-1{
     background-color: $color-p;
     width: 30%;
@@ -100,6 +100,7 @@ ul{
     }
     
 }
+// SECTION 2 //-------------------------->
 
 .section-2{
     width: 50%;
@@ -246,11 +247,10 @@ ul{
 .box-recom{
     display: flex;
     justify-content: space-between;
-    width: 500px;
+    width: 100%;
 }
 
-
-
+// MEDIA-Q //------------------------------------------------>
 @media screen and (min-width: 768px) and (max-width: 1352px){
     
     body{
@@ -259,7 +259,6 @@ ul{
     }
     .page{
         width: 100%;
-        height: auto;
         padding: 0;
         margin: 0;
         text-align: center;
@@ -268,7 +267,6 @@ ul{
 	.section-1{
 		font-size: 1.6vw;
 		align-self: center;
-		background-color: $color-p;
 		padding-left: 25%;
 		padding-right: 25%;
         border-bottom: 1.5px solid black;
@@ -293,7 +291,6 @@ ul{
     }
     
     .logo{
-        text-align: center;
         margin-bottom: 2%;
         padding-left: 0%;
         width: 100%;
@@ -345,6 +342,7 @@ ul{
         font-size: 1.5vw;
     }
 }
+
 @media screen and (min-width: 550px) and(max-width: 767px){
     body{
         margin: 0;
@@ -353,7 +351,6 @@ ul{
 
     .page{
         width: 100%;
-        height: auto;
         padding: 0;
         margin: 0;
         text-align: center;
@@ -362,7 +359,6 @@ ul{
 	.section-1{
 		font-size: 1.5vw;
 		align-self: center;
-		background-color: $color-p;
 		padding-left: 25%;
 		padding-right: 25%;
         border-bottom: 1.5px solid black;
@@ -457,7 +453,6 @@ ul{
 
     .page{
         width: 100%;
-        height: auto;
         padding: 0;
         margin: 0;
         text-align: center;
@@ -465,7 +460,6 @@ ul{
 
 	.section-1{
 		font-size: 1.5vw;
-		background-color: $color-p;
 		padding-left: 25%;
 		padding-right: 25%;
         border-bottom: 1.5px solid black;
@@ -543,7 +537,7 @@ ul{
     }
 
     .box, .box-recom{
-        font-size: 3vw;
+        font-size: 2.5vw;
     }
 
     .box-recom{
