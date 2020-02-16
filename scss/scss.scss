@@ -2,171 +2,208 @@
     font-family: 'aileronthin';
     src: url('/Aileron-thin/Aileron-Thin-webfont.eot');
     src: url('/Aileron-thin/Aileron-Thin-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/Aileron-thin/Aileron-Thin-webfont.woff2') format('woff2'),
-         url('/Aileron-thin/Aileron-Thin-webfont.woff') format('woff'),
-         url('/Aileron-thin/Aileron-Thin-webfont.ttf') format('truetype'),
-         url('/Aileron-thin/Aileron-Thin-webfont.svg#aileronthin') format('svg');
+        url('/Aileron-thin/Aileron-Thin-webfont.woff2') format('woff2'),
+        url('/Aileron-thin/Aileron-Thin-webfont.woff') format('woff'),
+        url('/Aileron-thin/Aileron-Thin-webfont.ttf') format('truetype'),
+        url('/Aileron-thin/Aileron-Thin-webfont.svg#aileronthin') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 
-$color-p: #feca06;
-$color-s: #4CAF50;
-$font-1: sans-serif;
+@font-face {
+    font-family: 'open-sans-regular';
+    src: url('/opensans_regular/OpenSans-Regular-webfont.eot');
+    src: url('/opensans_regular/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('/opensans_regular/OpenSans-Regular-webfont.woff') format('woff'),
+        url('/opensans_regular/OpenSans-Regular-webfont.ttf') format('truetype'),
+        url('/opensans_regular/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
-
-
-
-
-body{
-    margin: 0;
-    padding: 0;
 }
 
-.page{
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('/opensans_light/OpenSans-Light-webfont.eot');
+    src: url('/opensans_light/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+        url('/opensans_light/OpenSans-Light-webfont.woff') format('woff'),
+        url('/opensans_light/OpenSans-Light-webfont.ttf') format('truetype'),
+        url('/opensans_light/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+$color-p: #dde7a0;
+$color-s: rgb(130, 206, 133);
+$font-1: 'open-sans-regular';
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+}
+
+.page {
+    display: flex;
+    justify-content: center;
     height: auto;
-    width: auto;
+    width: 100%;
     font-family: $font-1;
 }
 
-ul{
+ul {
+    list-style-image: url(/images/icons8-lecture-13.png);
+    font-size: 15px;
+    width: 55%;
+}
+
+.li {
     list-style: none;
-
 }
 
-.puce{
-    width: 13px;
-    height: 13px;
-    color: $color-s;
+.txt-bold {
+    font-weight: bold;
+    background-color: rgb(210, 231, 208);
 }
 
+// ASIDE //-------------------------->
 
-// SECTION 1 //-------------------------->
-.section-1{
+.aside {
     background-color: $color-p;
-    width: 30%;
-    float: left;
+    width: 350px;
+    font-size: 14px;
 }
 
-.section-1 h2{
+.aside h2 {
     background-color: #404040;
     text-align: center;
     text-transform: uppercase;
     color: $color-p;
-    padding: 5px 0 5px 0;
+    padding: 1% 0 1% 0;
+    letter-spacing: 2px;
 }
 
-.box-photo{
-    
+.box-photo {
+
     display: flex;
     justify-content: center;
-    
-    &__img{
-        border: 2px solid orange;
+
+    &__img {
+        border: 3px solid rgb(226, 177, 122);
         border-radius: 81px;
-        width: 150px;
-        height: 150px;
+        width: 140px;
+        height: 140px;
         margin-top: 20px;
     }
 }
 
-.coordonees, .description, .logo{
+.coordonees,
+.description,
+.logo {
     padding-left: 15%;
     padding-right: 15%;
-    text-align: justify;
 }
 
-.coordonees{
-    line-height: 27px;
+.coordonees {
+    line-height: 17px;
+    font-weight: bold;
 }
 
 
 
-.description{
-    margin-bottom: 230px;
+.description {
+    margin-bottom: 150%;
 }
 
-.logo{
+.logo {
     text-align: center;
-    margin-bottom: 60%;
-    &__x{
-        
-        width: 60px; 
-        height: 60px;
-        border: 2px solid black;
+
+    &__x {
+
+        width: 35px;
+        height: 35px;
+        border: 4px solid black;
         border-radius: 30px;
-        padding: 10px 10px 10px 10px;  
+        padding: 10px 10px 10px 10px;
     }
-    
-}
-// SECTION 2 //-------------------------->
 
-.section-2{
-    width: 50%;
-    margin-left: 70px;
-    display: inline-block;
 }
 
-.section-2 h3{
-    margin-top: 50px;
+// SECTION //-------------------------->
+
+.section {
+    width: 600px;
+    padding: 0 3% 0 3%;
+    background-color: #eceff1;
 }
 
-.box-TP{
-    font-size: 3em;
+.section h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-top: 4.5%;
+}
+
+.section p {
+    font-size: 14px;
+}
+
+.box-TP {
+    font-size: 50px;
     line-height: 30px;
-    margin-bottom: 80px;
-    
-    &__color{
-        
+    margin-bottom: 10%;
+
+    &__color {
         color: $color-p;
         font-family: $font-1;
     }
-    
-    &__tiret{
-        
-        text-decoration: underline;
-        text-decoration-color: $color-p;
+
+    &__tiret {
+        border-bottom: 3px solid $color-p;
     }
 }
 
-.box-TP h1{
+.box-TP h1 {
     font-family: 'aileronthin';
 }
 
-.box-TP h2{
+.box-TP h2 {
     font-family: $font-1;
     font-size: 20px;
     margin-top: -40px;
 }
 
-.box-T{
-    width: auto;
+.box-T {
+    text-transform: uppercase;
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
-    border-bottom: 1px solid $color-s;
+    border-bottom: 3px solid $color-s;
     margin-top: 20px;
 
-    &__chapeau{
+    &__chapeau {
         width: 35px;
         height: 35px;
         margin-top: 15px;
         color: $color-s;
         margin-right: 20px;
-        
+
     }
 
-    &__caisse{
+    &__caisse {
         width: 30px;
         height: 30px;
         margin-top: 15px;
         color: $color-s;
         margin-right: 20px;
-        
+
     }
 
-    &__pinceau{
+    &__pinceau {
         width: 30px;
         height: 30px;
         margin-top: 15px;
@@ -175,389 +212,203 @@ ul{
     }
 }
 
-.box{
-    display: flex;
-    width: auto;
-}
+.box {
+    width: 100%;
 
-.box-2{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    
-    &__date-2{
+    &__1 {
         display: flex;
-        padding-bottom: 80px;
-        padding-top: 10px;
-        margin-bottom: -20px;
+        width: 100%;
 
-        &__puce{
-            width: 13px;
-            height: 13px;
-            color: $color-s;
-            padding-top: 17px;
-            margin-right: -25px;
+        &__txt {
+            width: 700px;
+            line-height: 20px;
+            border-bottom: 1px solid rgb(192, 192, 192);
         }
-    
     }
-
-    &__date{
-        display: flex;
-        padding-bottom: 80px;
-
-        &__puce{
-            width: 13px;
-            height: 13px;
-            color: $color-s;
-            padding-top: 17px;
-            margin-right: -25px;
-        }
-
-    }
-
-    &__date-3{
-        display: flex;
-        padding-bottom: 80px;
-        padding-top: 17px;
-    
-        &__puce{
-            width: 13px;
-            height: 13px;
-            color: $color-s;
-            padding-top: 17px;
-            margin-right: -25px;
-            }
-    
-        }
 }
 
-
-.box-form-txt{
-    margin-left: 155px;
-    text-align: justify;
-    width: 400px;
-}
-
-.box-exp-txt{
-    margin-left: 60px;
-    text-align: justify;
-    width: 400px;
-}
-
-.box-recom{
+.box-recom {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
 // MEDIA-Q //------------------------------------------------>
-@media screen and (min-width: 768px) and (max-width: 1352px){
-    
-    body{
+@media screen and (max-width: 980px) {
+
+    body {
         margin: 0;
         padding: 0;
-    }
-    .page{
         width: 100%;
-        padding: 0;
-        margin: 0;
-        text-align: center;
-	}
-
-	.section-1{
-		font-size: 1.6vw;
-		align-self: center;
-		padding-left: 25%;
-		padding-right: 25%;
-        border-bottom: 1.5px solid black;
-        width: 50%;
-	}
-
-    
-    .box-photo{
-        margin-left: 0%;
-    }
-    
-    .coordonees{
-        text-align: center;
-        line-height: 25px;
-    }
-    
-    .description{
-        margin-top: 10%;
-        padding-right: 2%;
-        padding-left: 2%;
-        margin-bottom: 10%;
-    }
-    
-    .logo{
-        margin-bottom: 2%;
-        padding-left: 0%;
-        width: 100%;
-        
-        &__x{
-            
-            width: 40px; 
-            height: 40px;
-            border: 2px solid black;
-            border-radius: 30px;
-        }
-    }
-    
-    .section-2{
-        width: 80%;
-        margin-left: 0;
     }
 
-    .box-TP{
-        font-size: 4vw;
-        text-align: center;
-    }
-
-    .box-TP h2{
-        font-size: 2vw;
-    }
-    
-    .box-T{
-
-        &__chapeau{
-            width: 2.8vw;
-            height: 2.8vw;
-            padding-top: 0%;
-        }
-        
-        &__caisse{
-            width: 2.8vw;
-            height: 2.8vw;
-        }
-
-
-        &__pinceau{
-            width: 2.8vw;
-            height: 2.8vw;
-        }
-    }
-
-    .box, .box-recom{
-        font-size: 1.5vw;
-    }
-}
-
-@media screen and (min-width: 550px) and(max-width: 767px){
-    body{
-        margin: 0;
-        padding: 0;
-    }
-
-    .page{
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        text-align: center;
-	}
-
-	.section-1{
-		font-size: 1.5vw;
-		align-self: center;
-		padding-left: 25%;
-		padding-right: 25%;
-        border-bottom: 1.5px solid black;
-        width: 50%;
-        
-	}
-    
-    .box-photo{
-        margin-left: 0%;
-    }
-    
-    .coordonees{
-        line-height: 20px;
-        text-align: center;
-        font-size: 2vw;
-    }
-    
-    .description{
-        font-size: 2vw;
-        margin-top: 10%;
-        padding-right: 2%;
-        padding-left: 2%;
-        margin-bottom: 10%;
-    }
-    
-    .logo{
-        text-align: center;
-        margin-bottom: 0%;
-        padding-left: 0%;
-        width: 100%;
-        
-        &__x{
-            
-            width: 5vw; 
-            height: 5vw;
-            border: 2px solid black;
-            border-radius: 30px;
-        }
-    }
-    
-    .section-2{
-        width: 80%;
-        margin-left: 0;
-    }
-
-    .box-TP{
-        font-size: 4vw;
-        text-align: center;
-    }
-
-    .box-TP h2{
-        font-size: 2vw;
-    }
-    
-    .box-T{
-        font-size: 1.5vw;
-
-        &__chapeau{
-            width: 2.8vw;
-            height: 2.8vw;
-            padding-top: 0%;
-        }
-        
-        &__caisse{
-            width: 2.8vw;
-            height: 2.8vw;
-        }
-
-
-        &__pinceau{
-            width: 2.8vw;
-            height: 2.8vw;
-        }
-    }
-
-    .box, .box-recom{
-        font-size: 2vw;
-    }
-
-    .box-recom{
+    .page {
         display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
-}
-
-@media screen and(max-width: 549px){
-    body{
+        flex-direction: column;
+        align-items: center;
+        padding: 5px 0 0 0;
         margin: 0;
-        padding: 0;
     }
 
-    .page{
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        text-align: center;
-	}
-
-	.section-1{
-		font-size: 1.5vw;
-		padding-left: 25%;
-		padding-right: 25%;
-        border-bottom: 1.5px solid black;
-        width: 50%;
-        
-	}
-    
-    .box-photo{
-        margin-left: 0%;
-    }
-    
-    .coordonees{
-        line-height: 15px;
-        text-align: center;
-        font-size: 2.8vw;
-    }
-    
-    .description{
-        font-size: 3vw;
-        margin-top: 10%;
-        padding-right: 2%;
-        padding-left: 2%;
-        margin-bottom: 10%;
-    }
-    
-    .logo{
-        text-align: center;
-        margin-bottom: 0%;
-        padding-left: 0%;
-        width: 100%;
-        
-        &__x{
-            
-            width: 5vw; 
-            height: 5vw;
-            border: 2px solid black;
-            border-radius: 30px;
-        }
-    }
-
-    .section-2{
-        width: 80%;
-        margin-left: 0;
-    }
-
-    .box-TP{
-        font-size: 5vw;
-        text-align: center;
-    }
-
-    .box-TP h2{
-        font-size: 3vw;
-        line-height: 40px;
-    }
-    
-    .box-T{
-        font-size: 3vw;
-
-        &__chapeau{
-            width: 4vw;
-            height: 4vw;
-            padding-top: 0%;
-        }
-        
-        &__caisse{
-            width: 4vw;
-            height: 4vw;
-        }
-
-
-        &__pinceau{
-            width: 4vw;
-            height: 4vw;
-        }
-    }
-
-    .box, .box-recom{
-        font-size: 2.5vw;
-    }
-
-    .box-recom{
+    .aside {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        text-align: center;
         width: 100%;
+        order: 3;
     }
 
-    .box-form-txt{
-        margin-left: 20%;
-        text-align: justify;
-        width: 400px;
+    .section {
+        background-image: url(/images/MoiRond.png);
+        background-repeat: no-repeat;
+        background-size: 150px;
+        background-position: top;
+        width: 90%;
+        padding: 0 3% 0 3%;
     }
 
-    ul{
-        list-style: none;
-        width: 100%;
+    .box-photo {
+        order: 3;
+
+        &__img {
+            display: none;
+        }
+    }
+
+    .box-TP {
+        text-align: center;
+        margin-top: 25%;
+    }
+
+    .description {
+        margin-bottom: 0%;
     }
 }
 
+@media screen and (max-width: 780px) {
 
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
 
+    .page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px 0 0 0;
+        margin: 0;
+    }
 
+    .aside {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        order: 3;
+    }
+
+    .section {
+        background-image: url(/images/MoiRond.png);
+        background-repeat: no-repeat;
+        background-size: 20vw;
+        background-position: top;
+        width: 90%;
+        padding: 0 3% 0 3%;
+    }
+
+    .box-photo {
+        order: 3;
+
+        &__img {
+            display: none;
+        }
+    }
+
+    .box-TP {
+        text-align: center;
+        margin-top: 30%;
+        font-size: 7vw;
+    }
+
+    .description {
+        margin-bottom: 0%;
+    }
+}
+
+@media screen and (max-width: 460px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1px 0 0 0;
+        margin: 0;
+    }
+
+    .aside {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        order: 3;
+    }
+
+    .section {
+        background-image: url(/images/MoiRond.png);
+        background-repeat: no-repeat;
+        background-size: 20vw;
+        background-position: top;
+        width: 100%;
+        padding: 0 3% 0 3%;
+    }
+
+    .box-photo {
+        order: 3;
+
+        &__img {
+            display: none;
+        }
+    }
+
+    .box-TP {
+        text-align: center;
+        margin-top: 30%;
+        font-size: 7vw;
+    }
+
+    .box-TP h2 {
+        font-size: 4vw;
+    }
+
+    .box-T {
+        font-size: 3.5vw;
+    }
+
+    .description {
+        margin-bottom: 0%;
+    }
+
+    .section h3 {
+        font-size: 4.5vw;
+    }
+
+    .section p {
+        font-size: 3.5vw;
+    }
+
+    ul {
+        font-size: 3.5vw;
+    }
+
+    .box-recom {
+        width: 100%;
+    }
+}
