@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'aileronthin';
-    src: url('/Aileron-thin/Aileron-Thin-webfont.eot');
-    src: url('/Aileron-thin/Aileron-Thin-webfont.eot?#iefix') format('embedded-opentype'),
-        url('/Aileron-thin/Aileron-Thin-webfont.woff2') format('woff2'),
-        url('/Aileron-thin/Aileron-Thin-webfont.woff') format('woff'),
-        url('/Aileron-thin/Aileron-Thin-webfont.ttf') format('truetype'),
-        url('/Aileron-thin/Aileron-Thin-webfont.svg#aileronthin') format('svg');
+    src: url('Aileron-Thin-webfont.eot');
+    src: url('Aileron-Thin-webfont.eot?#iefix') format('embedded-opentype'),
+        url('Aileron-Thin-webfont.woff2') format('woff2'),
+        url('Aileron-Thin-webfont.woff') format('woff'),
+        url('Aileron-Thin-webfont.ttf') format('truetype'),
+        url('Aileron-Thin-webfont.svg#aileronthin') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -13,23 +13,11 @@
 
 @font-face {
     font-family: 'open-sans-regular';
-    src: url('/opensans_regular/OpenSans-Regular-webfont.eot');
-    src: url('/opensans_regular/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-        url('/opensans_regular/OpenSans-Regular-webfont.woff') format('woff'),
-        url('/opensans_regular/OpenSans-Regular-webfont.ttf') format('truetype'),
-        url('/opensans_regular/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'open_sanslight';
-    src: url('/opensans_light/OpenSans-Light-webfont.eot');
-    src: url('/opensans_light/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
-        url('/opensans_light/OpenSans-Light-webfont.woff') format('woff'),
-        url('/opensans_light/OpenSans-Light-webfont.ttf') format('truetype'),
-        url('/opensans_light/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+    src: url('OpenSans-Regular-webfont.eot');
+    src: url('OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('OpenSans-Regular-webfont.woff') format('woff'),
+        url('OpenSans-Regular-webfont.ttf') format('truetype'),
+        url('OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -57,7 +45,7 @@ body {
 }
 
 ul {
-    list-style-image: url(/images/icons8-lecture-13.png);
+    list-style-image: url(puce.png);
     font-size: 15px;
     width: 55%;
 }
